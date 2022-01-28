@@ -5,6 +5,7 @@ import Circles from "../component/circles.jsx";
 import "../../styles/main.css";
 
 //create your first component
+
 const Main = () => {
 	return (
 		<table className="tablaContainer">
