@@ -10,12 +10,16 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-
+/* @import url("../img/gatito.png"); */
 
 .circulo{
-    background-color: rgb(156, 40, 40);
+    /* background: url("../img/gatito.png"); */
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 90px;
+    height: 90px;
     
+}
+.cat{
+    width: 100%;
+    height: auto;
 }

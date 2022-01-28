@@ -5,6 +5,8 @@ import Circles from "../component/circles.jsx";
 import "../../styles/main.css";
 
 //create your first component
+//mi idea es usar las clases de los componentes de circulo y cruz
+//const [figure, setFigure] = useState();
 
 const Main = () => {
 	return (
