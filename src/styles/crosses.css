@@ -1,0 +1,11 @@
+.cruz{
+    /* background: url("../img/gatito.png"); */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    
+}
+.dog{
+    width: 100%;
+    height: auto;
+}
