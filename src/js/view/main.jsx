@@ -1,42 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import Circles from "../component/circles.jsx";
+import Crosses from "../component/crosses.jsx";
 
 //include images into your bundle
 import "../../styles/main.css";
 
 //create your first component
 //mi idea es usar las clases de los componentes de circulo y cruz
-//const [figure, setFigure] = useState();
+
+//const [count, setCount] = useState(0);
 
 const Main = () => {
+	const [image, setImage] = useState();
+	//const [player, setPlayer] = useState();
+	//player == "" ? setImage : (else) otra cosa
+
 	return (
-		<table className="tablaContainer">
-			<tr>
-				<td onClick={() => console.log("HOLA")}>
-					<Circles />
-				</td>
+		<>
+			<div>
+				<button className="start">Start</button>
+				<button className="restart">Restart</button>
 
-				<td>Celda 2</td>
+				<table className="tablaContainer">
+					<tbody>
+						<tr>
+							<td
+								onClick={() => {
+									//if(	//player == "" ? setImage : (else) otra cosa)
+									setImage(<Circles />);
+								}}>
+								{image}
+							</td>
 
-				<td>Celda 3</td>
-			</tr>
+							<td>
+								<Crosses />
+							</td>
 
-			<tr>
-				<td>Celda 4</td>
+							<td>Celda 3</td>
+						</tr>
 
-				<td>Celda 5</td>
+						<tr>
+							<td>Celda 4</td>
 
-				<td>Celda 6</td>
-			</tr>
+							<td>Celda 5</td>
 
-			<tr>
-				<td>Celda 7</td>
+							<td>Celda 6</td>
+						</tr>
 
-				<td>Celda 8</td>
+						<tr>
+							<td>Celda 7</td>
 
-				<td>Celda 9</td>
-			</tr>
-		</table>
+							<td>Celda 8</td>
+
+							<td>Celda 9</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</>
 	);
 };
 
